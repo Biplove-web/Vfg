@@ -1,0 +1,95 @@
+/* General styles */
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Canvas styles */
+canvas {
+  border: 2px solid black;
+  margin: 20px auto;
+  display: block;
+  width: 90%; /* Canvas width is 90% of the viewport width */
+  max-width: 500px; /* Max canvas width of 500px */
+  height: auto; /* Maintain aspect ratio */
+  min-width: 300px; /* Minimum width of 300px */
+  min-height: 300px; /* Minimum height of 300px */
+}
+
+/* Controls section */
+#controls {
+  margin-top: 10px;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%; /* Modal width is 90% of screen */
+  max-width: 500px; /* Limit the modal to a max of 500px width */
+  text-align: center;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(170, 84, 196);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

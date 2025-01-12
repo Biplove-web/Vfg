@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Jigsaw Puzzle Game</h1>
+    <canvas id="jigsawCanvas" width="500" height="500"></canvas>
+    <div id="controls">
+        <button id="resetButton">Restart</button>
+        <button id="showRealImageButton">Show Real Image</button>
+    </div>
+    <!-- Custom Modal -->
+    <div id="winModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <p>You won! Congratulations!</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
